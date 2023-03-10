@@ -1,0 +1,146 @@
+ @import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+/* https://image.freepik.com/free-vector/cuba-beaches-flat-color-illustration_151150-3466.jpg?w=1800 */
+                          /* The body CSS affects the entire */
+body{
+  font-family: 'Poppins',sans-serif;
+  font-size: 1rem;
+  font-weight: 800;
+  line-height: 1.1;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background-image:url(https://image.freepik.com/free-vector/cuba-beaches-flat-color-illustration_151150-3466.jpg?w=1800);
+  background-size: contain;
+  background-repeat: repeat;
+  background-position: center;
+}
+
+                          /* h1 "Cuban Food Survey" */
+h1{
+  font-weight: 400;
+  line-height: 1.2;
+  text-align: center;
+}
+                          /* p " Thank you for taking the time...." */
+p{
+  font-size: 1.125rem;
+}
+
+                          /* label "this affects all the labels on the page" */
+label {
+  display: flex;
+  align-items: center;
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+}
+                          /* ALL LISTED "this affects all the listed elements on the page" */
+input,
+select,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+                            /* "the enitre page is covered in a div conatiner. This affects it all" */
+.container {
+  width: 100%;
+  margin: 3.125rem auto 0 auto;
+}
+                            /* "if the page shrinks under the given px it will resize too the given px" */
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+                          /* This header contains both h1 & p(thank you.....) elements" */
+.header {
+  padding: 0 0.625rem;
+  margin-bottom: 1.875rem;
+}
+                          /* p "Thank you for taking the" */
+.pintheheader{
+  font-style: italic;
+  font-weight: 200;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+
+                          /* form section */
+form {
+  background: #AED6F1;
+  opacity: 0.63;
+  padding: 2.5rem 0.625rem;
+  border-radius: 0.25rem;
+  }
+
+@media (min-width: 480px) {
+  form {
+    padding: 2.5rem;
+  }
+}
+
+.form-group {
+  margin: 0 auto 1.25rem auto;
+  padding: 0.25rem;
+}
+                        /* editing the size/color....etc of all boxes in the form */
+.form-control {
+  display: block;
+  width: 100%;
+  height: 2.375rem;
+  color: blue;
+  background-color: lightblue;
+  border: 2px solid grey;
+  border-radius: 0.25rem;
+}
+                      /* turns each box when clicked into pink */
+.form-control:focus {
+  border-color: pink;
+  outline: pink;
+}
+
+.input-radio,
+.input-checkbox {
+  display: inline-block;
+  margin-right: 0.625rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
+}
+                    /* moves all the boxes in the survey form */
+label{
+  float: right;
+  text-align: center;
+  width: 50%;
+}
+                  /* edits the suggestion area */
+.input-textarea {
+  min-height: 120px;
+  width: 100%;
+  padding: 0.625rem;
+}
+                /* edits the submit button */
+.submit-button {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 2px;
+  cursor: pointer;
+  border: groove;
+  border-color: blue;
+}
+                /* changes the the placeholder */
+::placeholder{
+  color: #5F6A6A;
+}
+
+.click{
+  background-image: linear-gradient(to left, white, blue, red)
+}
